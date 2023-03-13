@@ -357,3 +357,106 @@ body{
     opacity: 1;
     transform: translateX(140%) translateY(105px);
 }
+
+/* Tech - Computer */
+
+.parent .profile-Computer{
+    position: absolute;
+    left: 10px;
+    top: 460px;
+}
+                
+.profile-Computer{
+    position: relative;
+    width: 100px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+                
+.Tech-Computer {
+    z-index: 1;
+    position: relative;
+    width: 183px;
+    height: 180px;
+    margin-top: -100px;
+    margin-left: 105px;
+}
+                
+.profile-Computer:hover {
+    transform: scale(1.2);
+    position: absolute;
+    z-index: 3;
+}
+                
+.content-Computer {
+    position: absolute;
+    z-index: 3;
+    bottom: 75px;
+    padding: 20px;
+    min-width: 350px;
+    height: 225px;
+    border-style: solid;
+    background-color: #f9f9f9;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.5s;
+    right: -50px;
+    top: -235px;
+}
+
+                
+.content-Computer .header-Computer {
+    display: flex;
+    align-items: center;
+}
+                
+.content-Computer .header-Computer img {
+    grid-column: 1/2;
+    width: 100px;
+    height: 80px;
+    object-fit: fill;
+}
+                
+/* TEXT */
+                 
+.content-Computer .header-Computer .infos-Computer {
+    margin-left: 1em;
+}
+                
+.content-Computer .header-Computer .infos-Computer .name-Computer {
+    font-size: 1.25em;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.1px #000000;
+    letter-spacing: 1px;
+    font-size: 600;
+}
+                
+.content-Computer .header-Computer .infos-Computer .title-Computer {
+    font-size: 0.9em;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.7px #000000;
+    font-weight: 500;
+}
+                
+.content-Computer .body-Computer {
+    padding: -1em;
+    text-align:left;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.7px #000000;
+}
+                
+.content-Computer .body-Computer p {
+     font-size: 1.95em;
+    color: #272727;    
+}
+                
+.profile-Computer:hover .content-Computer {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-15%) translateY(0px);
+}
