@@ -674,3 +674,105 @@ body{
     opacity: 1;
     transform: translateX(-15%) translateY(20px);
 }
+
+/* Tech - Router */
+
+.parent .profile-Router{
+    position: absolute;
+    left: 560px;
+    top: 60px;
+    
+}
+                
+.profile-Router{
+    position: relative;
+    width: 100px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+                
+.Tech-Router {
+    z-index: 1;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-top: -20px;
+}
+                
+.profile-Router:hover {
+    transform: scale(1.2);
+    position: absolute;
+    z-index: 3;
+}
+                
+.content-Router {
+    position: absolute;
+    z-index: 3;
+    bottom: 75px;
+    padding: 20px;
+    min-width: 350px;
+    height: 225px;
+    border-style: solid;
+    background-color: #f9f9f9;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.5s;
+    left: 115%;
+    top: 150px;
+}
+                
+.content-Router .header-Router {
+    display: flex;
+    align-items: center;
+}
+                
+.content-Router .header-Router img {
+    grid-column: 1/2;
+    width: 60px;
+    height: 80px;
+    object-fit: fill;
+}
+                
+/* TEXT */
+                 
+.content-Router .header-Router .infos-Router {
+    margin-left: 1em;
+}
+                
+.content-Router .header-Router .infos-Router .name-Router {
+    font-size: 1.25em;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.1px #000000;
+    letter-spacing: 1px;
+    font-size: 600;
+}
+                
+.content-Router .header-Router .infos-Router .title-Router {
+    font-size: 0.9em;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.7px #000000;
+    font-weight: 500;
+}
+                
+.content-Router .body-Router {
+    padding: -1em;
+    text-align: left;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.7px #000000;
+}
+                
+.content-Router .body-Router p {
+     font-size: 1.95em;
+    color: #272727;    
+}
+
+.profile-Router:hover .content-Router {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(4%) translateY(-140px);
+}
