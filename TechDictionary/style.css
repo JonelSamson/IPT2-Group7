@@ -776,3 +776,59 @@ body{
     opacity: 1;
     transform: translateX(4%) translateY(-140px);
 }
+
+/* Tech -Shelf */
+
+.parent .profile-Shelf{
+    position: absolute;
+    left: 515px;
+    top: 140px;
+}
+                
+.profile-Shelf{
+    position: relative;
+    width: 100px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+                
+.Tech-Shelf {
+    position: relative;
+    width: 190px;
+    height: 125px;
+    margin-top: -20px;
+}
+                
+.content-Shelf {
+    position: absolute;
+    z-index: 3;
+    bottom: 75px;
+    padding: 20px;
+    min-width: 350px;
+    height: 225px;
+    border-style: solid;
+    background-color: #f9f9f9;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.5s;
+    right: -50px;
+    top: -235px;
+}
+
+                
+.content-Shelf .header-Shelf {
+    display: flex;
+    align-items: center;
+}
+                
+.content-Shelf .header-Shelf img {
+    grid-column: 1/2;
+    width: 100px;
+    height: 80px;
+    object-fit: fill;
+}
