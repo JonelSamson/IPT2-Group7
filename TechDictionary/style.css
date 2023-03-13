@@ -118,3 +118,135 @@ body{
     margin-left: 2px;
   
 }
+
+.parent .profile-Rack{
+    position: absolute;
+    width: 133px;
+    height: 99px;
+    left: 470px;
+    top: 400px;
+}
+
+.profile-Rack{
+    position: relative;
+    width: 100px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.Tech-Rack {
+    position: relative;
+    width: 147px;
+    height: 117px;
+    margin-top: -20px;
+}
+
+ .profile-Rack:hover {
+    transform: scale(1.2);
+    position: absolute;
+    z-index: 3;
+ }
+
+ .content-Rack {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 75px;
+    padding: 20px;
+    min-width: 350px;
+    height: 225px;
+    border-style: solid;
+    background-color: #f9f9f9;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.5s;
+    top: -70px;
+    left: 160%;
+
+ }
+
+ .content-Rack .header-Rack {
+    display: flex;
+    align-items: center;
+}
+
+.content-Rack .header-Rack img {
+    grid-column: 1/2;
+    width: 100px;
+    height: 80px;
+    object-fit: fill;
+}
+
+/* TEXT */
+ 
+.content-Rack .header-Rack .infos-Rack {
+    margin-left: 1em;
+}
+
+.content-Rack .header-Rack .infos-Rack .name-Rack {
+    font-size: 1.25em;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.1px #000000;
+    letter-spacing: 1px;
+    font-size: 600;
+}
+
+.content-Rack .header-Rack .infos-Rack .title-Rack {
+    font-size: 0.9em;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.7px #000000;
+    font-weight: 500;
+}
+
+.content-Rack .body-Rack {
+    padding: -1em;
+    text-align: left;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.7px #000000;
+}
+
+.content-Rack .body-Rack p {
+    font-size: 1.95em;
+    color: #272727;
+    
+}
+
+.profile-Rack:hover .content-Rack {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-15%) translateY(0px);
+}
+ 
+.parent .profile-Rack{
+    position: absolute;
+    width: 133px;
+    height: 99px;
+    left: 550px;
+    top: 450px;
+}
+
+.profile-Rack{
+    position: relative;
+    width: 100px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.Tech-Rack {
+    position: relative;
+    width: 147px;
+    height: 117px;
+    margin-top: -20px;
+}
