@@ -571,3 +571,106 @@ body{
             height: 80px;
             object-fit: fill;
         }
+
+/* Tech - CCTV */
+
+.parent .profile-CCTV{
+    position: absolute;
+    left: 130px;
+    top: 60px; 
+}
+
+.profile-CCTV{
+    position: relative;
+    width: 100px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+                
+.Tech-CCTV {
+    position: relative;
+    width: 115px;
+    height: 110px;
+    margin-top: 5px;
+}
+                
+.profile-CCTV:hover {
+    transform: scale(1.2);
+    position: absolute;
+    z-index: 3;
+}
+                
+.content-CCTV {
+    position: absolute;
+    z-index: 3;
+    bottom: 75px;
+    padding: 20px;
+    min-width: 350px;
+    height: 260px;
+    border-style: solid;
+    background-color: #f9f9f9;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.content-CCTV, .profile-CCTV:hover {
+    top: -5px;
+    right: 45%;
+}
+                
+.content-CCTV .header-CCTV {
+    display: flex;
+    align-items: center;
+}
+                
+.content-CCTV .header-CCTV img {
+    grid-column: 1/2;
+    width: 100px;
+    height: 80px;
+    object-fit: fill;
+}
+                
+/* TEXT */
+                 
+.content-CCTV .header-CCTV .infos-CCTV {
+    margin-left: 1em;
+}
+                
+.content-CCTV .header-CCTV .infos-CCTV .name-CCTV {
+    font-size: 1.25em;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.1px #000000;
+    letter-spacing: 1px;
+    font-size: 600;
+}
+                
+.content-CCTV .header-CCTV .infos-CCTV .title-CCTV {
+    font-size: 0.9em;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.7px #000000;
+    font-weight: 500;
+}
+                
+.content-CCTV .body-CCTV {
+    padding: -1em;
+    text-align: left;
+    color: #FF9D5C;
+    -webkit-text-stroke: 0.7px #000000;
+}
+                
+.content-CCTV .body-CCTV p {
+     font-size: 1.95em;
+    color: #272727;    
+}
+                
+.profile-CCTV:hover .content-CCTV {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-15%) translateY(20px);
+}
